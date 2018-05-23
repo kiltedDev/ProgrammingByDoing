@@ -1,29 +1,34 @@
 public class MoreVariablesAndPrinting {
   public static void main( String[] args) {
-    String myName, myEyes, myTeeth, myHair;
-    int myAge, myHeight, myWeight;
+    String name, eyes, teeth, hair;
+    int age, height, weight;
+    double heightCM, mass;
     String[] pronouns = new String[3];
 
-    myName = "Tom Wilson";
-    myAge = 36;
-    myHeight = 73; // inches
-    myWeight = 185; // lbs
-    myEyes = "Brown";
-    myTeeth = "White"; // Mostly
-    myHair = "Brown";
+    name = "Tom Wilson";
+    age = 36;
+    height = 73; // inches
+    weight = 185; // lbs
+    eyes = "Brown";
+    teeth = "White"; // Mostly
+    hair = "Brown";
+    heightCM = height*2.54;
+    mass = weight*0.45;
     pronouns[0] = "He";
     pronouns[1] = "Him";
     pronouns[2] = "His";
 
-    System.out.println( "Let's talk about " + myName + "." );
-    System.out.println( pronouns[0] + "'s " + myHeight + " inches tall." );
-    System.out.println( pronouns[0] + "'s " + myWeight + " pounds heavy." );
+    System.out.println( "Let's talk about " + name + "." );
+    System.out.print( pronouns[0] + "'s " + height + " inches ");
+    System.out.println("(" + heightCM + "cm) tall." );
+    System.out.print( pronouns[0] + "'s " + weight + " pounds ");
+    System.out.println("(" + mass + "kg) heavy." );
     System.out.println( "Actually, that's not so heavy.");
-    System.out.println( pronouns[0] + "'s got " + myEyes + " eyes and " + myHair + " hair." );
-    System.out.println( pronouns[2] + " teeth are usually " + myTeeth + " depending on the tea." );
+    System.out.println( pronouns[0] + "'s got " + eyes + " eyes and " + hair + " hair." );
+    System.out.println( pronouns[2] + " teeth are usually " + teeth + " depending on the tea." );
 
     // This lins is tricky; try to get it exactly right.
-    System.out.println( "If I add " + myAge + ", " + myHeight + ", and " + myWeight + " I get " + (myAge + myHeight + myWeight) + "."  );
+    System.out.println( "If I add " + age + ", " + height + ", and " + weight + " I get " + (age + height + weight) + "."  );
 
   }
 }
