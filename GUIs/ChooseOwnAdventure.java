@@ -50,7 +50,7 @@ public class ChooseOwnAdventure {
           System.out.println("He is funny and handsone and can mostly keep the food out of his beard.");
           System.out.println("You excuse yourselves after the meal and find your way back to the secluded glen where you first awoke.");
           System.out.println("His beard tickles your chin as you kiss tentatively at first.  Later,\nyour head rests on his chest and rises and falls as he breathes.");
-          System.out.println("You are wholely unprepared as he deflates.  The spider swarm that inhabited his fleshy disguise swarms around you, biting and cocooning you.");
+          System.out.println("You are wholly unprepared as he deflates.  The spider swarm that inhabited his fleshy disguise swarms around you, biting and cocooning you.");
         }
 
       } else if (east.equals("hill")){
@@ -147,5 +147,6 @@ public class ChooseOwnAdventure {
     }
 
     System.out.println("\nYou are dead.");
+    // System.out.println("Good job, Marquis.")
   }
 }
