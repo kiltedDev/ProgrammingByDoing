@@ -81,7 +81,7 @@ public class ChooseOwnAdventure {
       }
 
     } else if (introduction.equals("north")) {
-      System.out.println("You find yourself at the base of a beautiful WATERFALL.");
+      System.out.println("You find yourself at the base of a beautiful waterfall.");
       System.out.println("Predicatably, there is a CAVE behind it.");
       System.out.println("As that may be a trap... You could just follow the RIVER.");
 
@@ -90,14 +90,14 @@ public class ChooseOwnAdventure {
       do {
         System.out.print("\nWhere does adventure lead you? ");
         north = keyboard.next().toLowerCase();
-      } while (!north.equals("waterfall") && !north.equals("river"));
+      } while (!north.equals("cave") && !north.equals("river"));
 
-      if (north.equals("waterfall")) {
-        System.out.println("Behind the waterfall is a dark cave.  Something glitters in the distance.");
+      if (north.equals("cave")) {
+        System.out.println("The cave is dark and damp.  Something glitters in the shadows.");
         System.out.println("Light your trusty TORCH.");
         System.out.println("Something glitters?  Run over and see if it's GOLD.");
 
-        String waterfall = "";
+        String cave = "";
 
         do {
           System.out.print("\nWhat do you grab? ");
@@ -127,7 +127,7 @@ public class ChooseOwnAdventure {
         String river = "";
 
         do {
-          System.out.print("\nWhich animal do you go to? ");
+          System.out.print("\nWhich sound do you investigate? ");
           river = keyboard.next().toLowerCase();
         } while (!river.equals("splashing") && !river.equals("rustling"));
 
