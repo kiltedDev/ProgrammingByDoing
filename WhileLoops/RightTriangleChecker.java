@@ -31,7 +31,6 @@ public class RightTriangleChecker {
       else if (newSide < oldSide)
         System.out.println(newSide + " is smaller than " + oldSide + ".  Try again.");
     } while (newSide < 1 || newSide < oldSide);
-
     return newSide;
   }
 }
