@@ -82,6 +82,7 @@ public class Adventure2 {
         } else {
           System.out.println("You haven't found the girl yet.  You realize this and turn back.");
           location = "park";
+          action = "";
         }
         if (action.equals("park") ) {
           location = "park";
