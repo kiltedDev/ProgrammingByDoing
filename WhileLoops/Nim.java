@@ -38,8 +38,8 @@ public class Nim {
     System.out.println("Thanks, " + players[0].name + "\n");
 
     do {
-      int p = turn%2;
-      String activePlayer = players[p].name;
+      // int p = turn%2;
+      String activePlayer = players[turn%2].name;
 
       System.out.println( showPiles(gamePiles) + "\n");
       System.out.print(activePlayer + ", please choose your pile: ");
@@ -51,6 +51,8 @@ public class Nim {
 
       turn++;
     } while ( gamePiles[0].stack > 0 || gamePiles[1].stack > 0 || gamePiles[2].stack > 0);
+
+    System.out.println(players[turn%2].name + ", you are victorious.");
   }
 
   public static String showPiles(Pile[] piles) {
