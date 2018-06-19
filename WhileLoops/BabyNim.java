@@ -3,24 +3,25 @@
 
 import java.util.Scanner;
 
-class Pile {
+class BabyPile {
   String name;
   int stack = 3;
+  public BabyPile(String naming) {
+    name = naming;
+  }
 }
 
 public class BabyNim {
   public static void main(String[] args) {
     Scanner keyboard = new Scanner(System.in);
-    Pile[] ourPiles = new Pile[3];
+    BabyPile[] ourPiles = new BabyPile[3];
     String chosen;
     int removed;
 
-    ourPiles[0] = new Pile();
-    ourPiles[0].name = "A";
-    ourPiles[1] = new Pile();
-    ourPiles[1].name = "B";
-    ourPiles[2] = new Pile();
-    ourPiles[2].name = "C";
+    ourPiles[0] = new BabyPile("A");
+    ourPiles[1] = new BabyPile("B");
+    ourPiles[2] = new BabyPile("C");
+
 
     while (ourPiles[0].stack > 0 || ourPiles[1].stack > 0 || ourPiles[2].stack > 0) {
       System.out.println( showPiles(ourPiles) + "\n");
@@ -36,11 +37,11 @@ public class BabyNim {
     System.out.println("All piles are empty.  Well done!");
   }
 
-  public static String showPiles(Pile[] piles) {
+  public static String showPiles(BabyPile[] piles) {
     int i;
     String currentState = "";
 
-    for (Pile p : piles) {
+    for (BabyPile p : piles) {
       currentState += p.name + ": " + p.stack + "\t";
     }
 
